@@ -1,13 +1,15 @@
 import { useState } from "react";
 
+// DEBUB: REMOVE LATER
+import { generateAlphanumericStrings } from "../Utils/Random";
+
 export default function Form({ callback }) {
   const [stringLength, setStringLength] = useState(15);
   const [numStrings, setNumStrings] = useState(1);
 
   const formSubmit = (e) => {
     e.preventDefault();
-    console.log(stringLength);
-    console.log(numStrings);
+    callback({ stringLength, numStrings });
   };
 
   return (

@@ -6,7 +6,7 @@ export default function Results({ stringList }) {
       </h1>
       <ul className="ml-6">
         {stringList.map((string, _id) => (
-          <li className="py-2" key={_id}>
+          <li className="py-2 font-mono" key={_id}>
             {string}
           </li>
         ))}

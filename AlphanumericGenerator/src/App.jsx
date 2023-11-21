@@ -5,14 +5,15 @@ import Header from "./Components/Header";
 import Form from "./Components/Form";
 import Results from "./Components/Results";
 
-export default function App() {
-  const [stringList, setStringList] = useState([
-    "fasfeli",
-    "58ddkife3",
-    "428defei90",
-  ]);
+// util functions
+import { generateAlphanumericStrings } from "./Utils/Random";
 
-  const requestNewStrings = ({ stringLength, numStrings }) => {};
+export default function App() {
+  const [stringList, setStringList] = useState([]);
+
+  const requestNewStrings = ({ stringLength, numStrings }) => {
+    setStringList(generateAlphanumericStrings(stringLength, numStrings));
+  };
 
   return (
     <div
@@ -21,7 +22,7 @@ export default function App() {
     >
       <Header />
       <Form callback={requestNewStrings} />
-      <Results stringList={stringList.concat(stringList).concat(stringList)} />
+      <Results stringList={stringList} />
     </div>
   );
 }
