@@ -11,8 +11,8 @@ import { generateAlphanumericStrings } from "./Utils/Random";
 export default function App() {
   const [stringList, setStringList] = useState([]);
 
-  const requestNewStrings = ({ stringLength, numStrings }) => {
-    setStringList(generateAlphanumericStrings(stringLength, numStrings));
+  const requestNewStrings = (args) => {
+    setStringList(generateAlphanumericStrings(args));
   };
 
   return (

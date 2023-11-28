@@ -7,8 +7,8 @@ export default function Header() {
       <h1 className="text-4xl font-bold my-4">Random AlphaNumeric Generator</h1>
       <p>
         Use this random letter and number generator to generate a random
-        alphanumeric string from the English alphabet or any other alphabet of
-        your choosing, as well as the numbers from 0 to 9.
+        alphanumeric string from the English alphabet, as well as the numbers
+        from 0 to 9.
       </p>
     </div>
   );
