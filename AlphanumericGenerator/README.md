@@ -13,3 +13,14 @@ Currently, two official plugins are available:
 
 Tailwind should be set up with this project already, simply
 add tailwind css class names to the html to get started.
+
+---
+
+### Final thoughts on project
+
+- Project could have used better documentation and commenting.
+- There are several places where code is repeated, could move their logic into small
+  components and hooks.
+- Using some state management would remove the need for callback function calls.
+- A good improvement would be to add tooltips giving the user more specific information
+  when hovering over numerical or checkbox inputs.
