@@ -1,0 +1,29 @@
+.timer {
+  padding: 4rem 1rem;
+}
+.timer > * {
+  margin: 1rem;
+}
+
+.timer__title {
+  font-size: 8vw;
+}
+
+.timer__display-time {
+  font-family: monospace;
+  font-size: 6vw;
+}
+
+.timer__description {
+  margin-top: 6rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+.timer__description > span {
+  color: #888;
+  background-color: white;
+  padding-inline: 0.5rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}

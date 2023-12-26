@@ -1,0 +1,31 @@
+.card {
+  padding: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-inline: auto;
+  width: clamp(260px, 100%, 350px);
+}
+
+.card > p {
+  margin: 0.5rem;
+}
+
+.card__focus {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+.table {
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  border: 2px solid black;
+  height: 300px;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 3px;
+  padding-inline: 10px;
+}
