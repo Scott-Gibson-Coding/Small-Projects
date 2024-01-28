@@ -1,0 +1,37 @@
+main {
+  height: 100vh;
+  background-color: hsl(244, 79%, 87%);
+
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.counter h1 {
+  font-size: var(--text-xl);
+  font-weight: var(--fw-bold);
+}
+
+.counter p {
+  font-size: var(--text-xxl);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.buttons button {
+  font-family: var(--ff-mono);
+  letter-spacing: 2px;
+  background-color: inherit;
+  padding: 0.3rem;
+  padding-inline: 0.6rem;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.buttons button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
