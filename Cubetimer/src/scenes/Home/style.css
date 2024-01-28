@@ -1,9 +1,0 @@
-.content {
-  min-width: 600px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-
-.content > * {
-  height: 60vh;
-}
